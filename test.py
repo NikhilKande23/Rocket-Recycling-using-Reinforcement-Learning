@@ -9,7 +9,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 if __name__ == '__main__':
 
-    task = 'landing'  # 'hover' or 'landing'
+    task = 'hover'  # 'hover' or 'landing'
     max_steps = 700
     ckpt_dir = glob.glob(os.path.join(task+'_ckpt', '*.pt'))[-1]  # last ckpt
 
